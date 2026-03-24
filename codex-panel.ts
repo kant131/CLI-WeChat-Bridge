@@ -156,15 +156,21 @@ async function main(): Promise<void> {
             await adapter.sendInput(message.payload.text);
             sendResponse(message.id, true);
             break;
+          case "list_resume_sessions":
           case "list_resume_threads":
             sendResponse(
               message.id,
               true,
-              await adapter.listResumeThreads(message.payload.limit),
+              await adapter.listResumeSessions(message.payload.limit),
             );
             break;
+          case "resume_session":
+            await adapter.resumeSession(message.payload.sessionId);
+            publishState();
+            sendResponse(message.id, true);
+            break;
           case "resume_thread":
-            await adapter.resumeThread(message.payload.threadId);
+            await adapter.resumeSession(message.payload.threadId);
             publishState();
             sendResponse(message.id, true);
             break;
