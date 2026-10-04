@@ -472,5 +472,5 @@ Daemon 模式支持将消息开头的表情映射为命令。表情绑定对微�
 - GitHub: [@UNLINEARITY](https://github.com/UNLINEARITY)
 
 <!-- star-history:start -->
-[![Star History](https://raw.githubusercontent.com/UNLINEARITY/CLI-WeChat-Bridge/main/assets/star-history/star-history.png)](https://star-history.com/#UNLINEARITY/CLI-WeChat-Bridge&Date)
+[![Star History](https://raw.githubusercontent.com/kant131/CLI-WeChat-Bridge/main/assets/star-history/star-history.png)](https://star-history.com/#kant131/CLI-WeChat-Bridge&Date)
 <!-- star-history:end -->
